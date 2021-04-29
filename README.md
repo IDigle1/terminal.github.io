@@ -1,4 +1,15 @@
-# payment-terminal
+# payment-terminal - тостовое задание
+https://gitlab.com/shakuro-public/frontend-test
+
+## Зависимости
+```
+Vue.js - для более удобной работы с DOM
+Vuex - для упрощения работы с состоянием проекта
+Vue-router - для упрощения работы с маршрутизацией
+Vuetify - для упрощения построения сетки 
+Vuelidate - для упрощения валидации входных данных
+Vue-the-mask - для упрощения работы с масками 
+```
 
 ## Project setup
 ```
@@ -20,5 +31,32 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Задача по рефакторингу
+```
+function func(s, a, b) {
+
+	if (!s.length) {
+		return -1;
+	}
+	
+    var splitedStr = s.split('');
+	var aIndex =     -1;
+	var bIndex =     -1;
+
+	splitedStr.forEach((item, i) => {
+	    if (item == a) {
+	    	aIndex = i;
+    	}
+
+	    if (item == b) {
+	    	bIndex = i;
+    	}
+
+        if (aIndex + 1 && bIndex + 1) {
+            return false;
+        }
+	});
+	
+    return Math.max(aIndex, bIndex);
+}
+```
