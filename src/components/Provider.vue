@@ -45,6 +45,7 @@
                         <v-btn 
                             type="submit"
                             :loading="getSubmitStatus == 'pending'"
+                            :disabled="getSubmitStatus == 'ok'"
                         >
                             Submit
                         </v-btn>
