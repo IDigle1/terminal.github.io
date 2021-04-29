@@ -30,5 +30,32 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Задача на рефакторинг
+```
+function func(s, a, b) {
+
+	if (!s.length) {
+		return -1;
+	}
+	
+    var splitedStr = s.split('');
+	var aIndex =     -1;
+	var bIndex =     -1;
+
+	splitedStr.forEach((item, i) => {
+	    if (item == a) {
+	    	aIndex = i;
+    	}
+
+	    if (item == b) {
+	    	bIndex = i;
+    	}
+
+        if (aIndex + 1 && bIndex + 1) {
+            return false;
+        }
+	});
+	
+    return Math.max(aIndex, bIndex);
+}
+```
