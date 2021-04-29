@@ -1,4 +1,5 @@
 # payment-terminal - тостовое задание
+https://gitlab.com/shakuro-public/frontend-test
 
 ## Зависимости
 ```
