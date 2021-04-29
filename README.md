@@ -30,7 +30,7 @@ npm run build
 npm run lint
 ```
 
-## Задача на рефакторинг
+## Задача по рефакторингу
 ```
 function func(s, a, b) {
 
